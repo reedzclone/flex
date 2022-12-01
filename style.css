@@ -1,0 +1,94 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+.container {
+    display: flex;
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    padding: 50px 40px;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+    padding: 40px 20px;
+    padding-left: 40px;
+}
+
+.sedans .btn {
+    color: var(--Bright-orange);
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+    padding: 40px 20px;
+    padding-left: 40px;
+}
+
+.suvs .btn {
+    color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    padding: 40px 20px;
+    padding-left: 40px;
+}
+
+.luxury .btn {
+    color: var(--Very-dark-cyan);
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 1rem;
+    border: none;
+    background: var(--Very-light-gray);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    font-size: 18px;
+}
+
+.cars {
+    animation-name: cars;
+    animation-duration: 2.5s;
+    animation-iteration-count: 4;
+
+}
+
+@keyframes cars {
+    100% {transform: translateX(90px)}
+}
+
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    padding: 10px 0px;
+    color: var(--Very-light-gray);
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: start;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    justify-content: center;
+    color: var(--Transparent-white);
+}
+
+
